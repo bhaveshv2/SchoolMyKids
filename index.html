@@ -1,0 +1,38 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>School-My-Kids-Assignment</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container" class="d-flex flex-column justify-content-sm-around align-items-sm-center">
+            <header style="color: #dfd3c3;"><h1>The Single Digit Game</h1></header>
+            <div id="question-container">
+                <div id="problems-container">
+                  <div class="questions" id="q1"></div>
+                  <div class="questions" id="q2"></div>
+                  <div class="questions" id="q3"></div>
+                  <div class="questions" id="q4"></div>
+                </div>
+                <div id="expected-container">
+                  <div class="exp-ans" id="ea1" ondrop="drop1(event)" ondragover="allowDrop(event)"></div>
+                  <div class="exp-ans" id="ea2" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+                  <div class="exp-ans" id="ea3" ondrop="drop3(event)" ondragover="allowDrop(event)"></div>
+                  <div class="exp-ans" id="ea4" ondrop="drop4(event)" ondragover="allowDrop(event)"></div>
+                </div>
+            </div>
+            <div id="answer-container">
+              <div class="ans" id="ans1" draggable="true" ondragstart="drag1(event)">  </div>
+              <div class="ans" id="ans2" draggable="true" ondragstart="drag2(event)">  </div>
+              <div class="ans" id="ans3" draggable="true" ondragstart="drag3(event)">  </div>
+              <div class="ans" id="ans4" draggable="true" ondragstart="drag4(event)">  </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
